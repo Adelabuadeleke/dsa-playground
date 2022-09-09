@@ -26,7 +26,9 @@ var Stack = function() {
     }
 
     // PEEK:Returns the value at the end of the stack
-    
+    this.peek = function() {
+        return this.storage[this.count-1];
+    }
 }
 
 var kamStack = new Stack();
