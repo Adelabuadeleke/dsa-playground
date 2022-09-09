@@ -11,7 +11,7 @@ function mySet() {
     this.values = function() {
         return collection;
     }
-    
+
     // this method will add an element to the set
     this.add = function(element) {
         if(!this.has(element)) {
@@ -21,4 +21,15 @@ function mySet() {
         return false;
     }
 
+    // this will remove an element from a set
+    this.remove = function(element) {
+        if(this.has(element)) {
+            index = collection.indexOf(element);
+            collection.splice(index, 1);
+            return true;
+        }
+        return false;
+    }
+
+    // this method will return size of the collection
 }
