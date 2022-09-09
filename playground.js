@@ -17,10 +17,10 @@ for(i = 0; i < palindrome.length; i++){
 for(i = 0; i < palindrome.length; i++) {
   reverse += letters.pop()
 }
-console.log(reverse)
+// console.log(reverse)
 
-// if (rword === word) {
-//   console.log(word + " is a palindrome")
-// } else {
-//   console.log(word + " is not a palindrome")
-// }
+if (reverse === palindrome) {
+  console.log(palindrome + " is a palindrome")
+} else {
+  console.log(palindrome + " is not a palindrome")
+}
