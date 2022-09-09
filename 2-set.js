@@ -35,4 +35,18 @@ function mySet() {
     this.size = function() {
         return collection.length;
     };
+
+    // this method will return the intersection of two sets as a new set
+    this.union = function(otherSet) {
+        var unionSet = new mySet();
+        var firstSet = this.values();
+        var secondSet = otherSet.values();
+        firstSet.forEach(function(e){
+            unionSet.add(e);
+        });
+        secondSet.forEach(function(e){
+            unionSet.add(e);
+        });
+        return unionSet;
+    }
 }
