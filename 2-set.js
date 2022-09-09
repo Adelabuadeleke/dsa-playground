@@ -73,4 +73,12 @@ function mySet() {
         });
         return differenceSet;
     }
+
+     // this method will test if the set is a subset of a different set
+    this.subset = function(otherSet) {
+        var firstSet = this.values();
+            return firstSet.every(function(value) {
+            return otherSet.has(value);
+        })
+    } 
 }
