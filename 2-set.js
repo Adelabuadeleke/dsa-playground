@@ -32,4 +32,7 @@ function mySet() {
     }
 
     // this method will return size of the collection
+    this.size = function() {
+        return collection.length;
+    };
 }
