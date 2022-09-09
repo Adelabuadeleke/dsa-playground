@@ -9,7 +9,7 @@ var Stack = function() {
         this.count++;
     }
 
-    // POP: Removes and returnd the value at the end of the stack
+    // POP: Removes and return the value at the end of the stack
     this.pop = function() {
         if(this.count === 0) {
             return undefined;
@@ -31,5 +31,15 @@ var Stack = function() {
     }
 }
 
-var kamStack = new Stack();
-console.log(kamStack.count);
+var fruits = new Stack();
+fruits.push('apple');
+fruits.push('banana');
+fruits.push('coconut');
+fruits.push('water melon');
+fruits.push('cashew');
+console.log(fruits.storage);
+console.log(`total number of fruits:${fruits.size()}`);
+console.log(fruits.pop());
+console.log(fruits.storage);
+console.log(`total number of fruits:${fruits.size()}`);
+console.log(fruits.peek());
