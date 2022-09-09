@@ -19,6 +19,13 @@ var Stack = function() {
         delete this.storage[this.count];
         return result;
     }
+
+    // Size: Get number of items in stack
+    this.size = function() {
+        return this.count;
+    }
+
+    // PEEK:Returns the value at the end of the stack
     
 }
 
