@@ -3,22 +3,19 @@
 // functions: push, pop, peek, length
 var letters = [];
 
-var word = "racecar"
-
-var rword = "";
+let palindrome = "rotator"
+let reverse = "";
 
 // put letters of word into stack
-for (var i = 0; i < word.length; i++) {
-  letters.push(word[i]);
+for(i = 0; i < palindrome.length; i++){
+  letters.push(palindrome[i])
 }
-
+console.log(letters)
 // pop off the stack in reverse order
-for (var i = 0; i < word.length; i++) {
-  rword += letters.pop();
-}
 
-if (rword === word) {
-  console.log(word + " is a palindrome")
-} else {
-  console.log(word + " is not a palindrome")
-}
+
+// if (rword === word) {
+//   console.log(word + " is a palindrome")
+// } else {
+//   console.log(word + " is not a palindrome")
+// }
