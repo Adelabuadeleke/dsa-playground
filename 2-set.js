@@ -6,4 +6,12 @@ function mySet() {
     this.has = function(element) {
         return (collection.indexOf(element) !== -1);
     };
+
+    // this  method will return all the values in a set
+    this.values = function() {
+        return collection;
+    }
+    // this method will add an element to the set
+
+
 }
