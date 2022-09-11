@@ -1,6 +1,10 @@
 function Queue() {
     collection = [];
     this.print = function() {
-        console.log(collection)
+        console.log(collection);
+    }
+
+    this.enqueue = function (element) {
+        collection.push(element);
     }
 }
