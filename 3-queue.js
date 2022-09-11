@@ -61,13 +61,17 @@ function PriorityQueue() {
     this.dequeue = function() {
         var value = collection.shift();
         return value[0]
-    }
+    };
 
     this.front = function() {
         return collection[0];
-    }
+    };
 
     this.size = function() {
         return(collection.length === 0);
-    }
+    };
+
+    this.isEmpty = function() {
+        return (collection.length === 0);
+    };
 }
