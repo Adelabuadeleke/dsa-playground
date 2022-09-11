@@ -66,4 +66,8 @@ function PriorityQueue() {
     this.front = function() {
         return collection[0];
     }
+
+    this.size = function() {
+        return(collection.length === 0);
+    }
 }
