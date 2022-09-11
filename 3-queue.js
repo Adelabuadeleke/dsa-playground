@@ -19,4 +19,8 @@ function Queue() {
     this.size = function() {
         return(collection.length === 0);
     }
+
+    this.isEmpty = function() {
+        return (collection.length === 0);
+    }
 }
