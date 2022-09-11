@@ -75,3 +75,12 @@ function PriorityQueue() {
         return (collection.length === 0);
     };
 }
+
+var pq = new PriorityQueue();
+console.log(pq.printCollection())
+pq.enqueue('k')
+pq.enqueue('a')
+pq.enqueue('m')
+pq.enqueue('a')
+pq.enqueue('l')
+console.log(pq.printCollection())
