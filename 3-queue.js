@@ -57,4 +57,9 @@ function PriorityQueue() {
             }
         }
     };
+
+    this.dequeue = function() {
+        var value = collection.shift();
+        return value[0]
+    }
 }
